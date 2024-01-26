@@ -1,4 +1,4 @@
-package com.email.email.modules.Email.application.DTOs.auth;
+package com.email.email.modules.email.application.DTOs.auth;
 
 import lombok.Data;
 
