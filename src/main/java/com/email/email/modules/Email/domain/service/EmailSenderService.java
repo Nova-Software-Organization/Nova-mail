@@ -5,7 +5,7 @@
  * Propriedade da Empresa: Todos os direitos reservados
  * ----------------------------------------------------------------------------
  */
-package com.email.email.modules.email.domain.service;
+package com.email.email.modules.Email.domain.service;
 
 import org.springframework.stereotype.Service;
 

@@ -1,4 +1,4 @@
-package com.email.email.modules.email.domain.event;
+package com.email.email.modules.Email.domain.event;
 
 public class MailSendEvent {
     

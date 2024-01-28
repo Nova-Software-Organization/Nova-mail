@@ -5,7 +5,7 @@
  * Propriedade da Empresa: Todos os direitos reservados
  * ----------------------------------------------------------------------------
  */
-package com.email.email.modules.email.application.DTOs.auth;
+package com.email.email.modules.Email.application.DTOs.auth;
 
 public class ResponseMessageDTO {
     private String message;
