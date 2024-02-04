@@ -5,7 +5,7 @@
  * Propriedade da Empresa: Todos os direitos reservados
  * ----------------------------------------------------------------------------
  */
-package com.email.email.shared.Container.providers.DateProvider;
+package com.email.email.shared.container.providers.DateProvider;
 
 import java.util.Date;
 import java.util.List;

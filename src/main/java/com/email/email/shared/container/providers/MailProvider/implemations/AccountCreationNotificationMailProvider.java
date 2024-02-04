@@ -5,7 +5,7 @@
  * Propriedade da Empresa: Todos os direitos reservados
  * ----------------------------------------------------------------------------
  */
-package com.email.email.shared.Container.providers.MailProvider.implemations;
+package com.email.email.shared.container.providers.MailProvider.implemations;
 
 import org.springframework.mail.javamail.MimeMessageHelper;
 import org.thymeleaf.TemplateEngine;
@@ -13,7 +13,7 @@ import org.thymeleaf.context.Context;
 import org.thymeleaf.spring6.SpringTemplateEngine;
 import org.thymeleaf.templateresolver.ClassLoaderTemplateResolver;
 
-import com.email.email.shared.Container.providers.MailProvider.IAccountCreationNotificationMailProvider;
+import com.email.email.shared.container.providers.MailProvider.IAccountCreationNotificationMailProvider;
 
 import jakarta.mail.MessagingException;
 

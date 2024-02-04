@@ -5,7 +5,6 @@
  * Propriedade da Empresa: Todos os direitos reservados
  * ----------------------------------------------------------------------------
  */
-
 package com.email.email.core.config.modelMapperHelpers;
 
 import org.modelmapper.ModelMapper;

@@ -5,7 +5,7 @@
  * Propriedade da Empresa: Todos os direitos reservados
  * ----------------------------------------------------------------------------
  */
-package com.email.email.shared.Container.providers.MailProvider.implemations;
+package com.email.email.shared.container.providers.MailProvider.implemations;
 
 import org.springframework.mail.javamail.MimeMessageHelper;
 import org.thymeleaf.TemplateEngine;
@@ -13,14 +13,14 @@ import org.thymeleaf.context.Context;
 import org.thymeleaf.spring6.SpringTemplateEngine;
 import org.thymeleaf.templateresolver.ClassLoaderTemplateResolver;
 
-import com.email.email.shared.Container.providers.MailProvider.IConfirmationAcctountMailProvider;
+import com.email.email.shared.container.providers.MailProvider.IResetPasswordMailProvider;
 
 import jakarta.mail.MessagingException;
 
-public class ConfirmationMailProvider implements IConfirmationAcctountMailProvider {
+public class ResetPasswordEmailProvider implements IResetPasswordMailProvider {
     private final TemplateEngine templateEngine;
 
-    public ConfirmationMailProvider(TemplateEngine templateEngine) {
+    public ResetPasswordEmailProvider(TemplateEngine templateEngine) {
         ClassLoaderTemplateResolver templateResolver = new ClassLoaderTemplateResolver();
         templateResolver.setTemplateMode("HTML");
         templateResolver.setPrefix("templates/email/");
@@ -33,12 +33,14 @@ public class ConfirmationMailProvider implements IConfirmationAcctountMailProvid
         this.templateEngine = springTemplateEngine;
     }
 
-    public void confirmationMail(MimeMessageHelper helper, String templateType, String user) throws MessagingException {
-        helper.setSubject("Confirmação de Conta");
+    public void resetPasswordMail(MimeMessageHelper helper, String resetCode, String templateType, String user) throws MessagingException {
+        helper.setSubject("Redefinição de Senha - Código de Verificação");
         Context context = new Context();
+        context.setVariable("resetCode", resetCode);
         context.setVariable("user", user);
+        
 
-        String templatePath = "confirmation" + "/" + templateType;
+        String templatePath = "reset-password" + "/" + templateType;
         String htmlContent = templateEngine.process(templatePath, context);
         helper.setText(htmlContent, true);
     }

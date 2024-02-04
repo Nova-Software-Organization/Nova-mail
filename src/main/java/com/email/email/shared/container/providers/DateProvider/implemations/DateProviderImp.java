@@ -5,14 +5,14 @@
  * Propriedade da Empresa: Todos os direitos reservados
  * ----------------------------------------------------------------------------
  */
-package com.email.email.shared.Container.providers.DateProvider.implemations;
+package com.email.email.shared.container.providers.DateProvider.implemations;
 
 import java.util.Date;
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
 
-import com.email.email.shared.Container.providers.DateProvider.IDateProvider;
+import com.email.email.shared.container.providers.DateProvider.IDateProvider;
 
 public class DateProviderImp implements IDateProvider {
     
