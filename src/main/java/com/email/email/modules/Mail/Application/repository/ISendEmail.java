@@ -5,7 +5,7 @@
  * Propriedade da Empresa: Todos os direitos reservados
  * ----------------------------------------------------------------------------
  */
-package com.email.email.modules.Email.application.repository;
+package com.email.email.modules.Mail.Application.repository;
 
 public interface ISendEmail {
     void sendTextEmail(String to, String subject, String body);
