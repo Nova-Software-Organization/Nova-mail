@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Confirmação de Pedido - Em Processamento</title>
+</head>
+<body>
+    <h1>Confirmação de Pedido - Em Processamento</h1>
+    
+    <p>Olá <span th:text="${bodyOrder.customerName}"></span>,</p>
+    
+    <p>Queremos informar que o seu pedido número <span th:text="${bodyOrder.orderNumber}"></span> está sendo processado.</p>
+    
+    <p>Detalhes do Pedido:</p>
+    <ul>
+        <li>Data do Pedido: <span th:text="${bodyOrder.dateOrder}"></span></li>
+        <li>Total do Pedido: <span th:text="${bodyOrder.totalValue}"></span></li>
+        <li>Status do Pedido: Em Processamento</li>
+    </ul>
+    
+    <p>Por favor, aguarde enquanto preparamos o seu pedido com todo cuidado.</p>
+    
+    <p>Estamos à disposição para quaisquer dúvidas ou solicitações adicionais.</p>
+        
+    <p>Obrigado por escolher a nossa loja!</p>
+    <p>Atenciosamente, Equipe da Loja</p>
+</body>
+</html>
