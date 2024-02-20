@@ -1,13 +1,10 @@
 package com.email.email.modules.Mail.Application.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.mail.javamail.MimeMessageHelper;
 import org.springframework.stereotype.Service;
 
-import com.email.email.modules.Mail.Application.DTOs.response.ResponseMessageDTO;
 import com.email.email.modules.Mail.Application.factory.EmailFactory;
 import com.email.email.modules.Mail.Application.repository.EmailService;
 import com.email.email.modules.Mail.Domain.model.Email;
