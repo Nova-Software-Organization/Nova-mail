@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Confirmação de Envio de Pedido</title>
+</head>
+<body>
+    <h1>Confirmação de Envio de Pedido</h1>
+    
+    <p>Olá <span th:text="${bodyOrder.customerName}"></span>,</p>
+    
+    <p>Queremos informar que o seu pedido número <span th:text="${bodyOrder.orderNumber}"></span> foi enviado com sucesso!</p>
+    
+    <p>Detalhes do Envio:</p>
+    <ul>
+        <li>Data do Envio: <span th:text="${bodyOrder.shippingDate}"></span></li>
+        <li>Total do Pedido: <span th:text="${bodyOrder.totalValue}"></span></li>
+        <li>Status do Pedido: Enviado</li>
+    </ul>
+    
+    <p>Você pode acompanhar o status de entrega do seu pedido através do link a seguir: <a href="#" th:href="${bodyOrder.trackingLink}">Acompanhar Pedido</a></p>
+    
+    <p>Estamos à disposição para quaisquer dúvidas ou preocupações adicionais.</p>
+        
+    <p>Obrigado por escolher a nossa loja!</p>
+    <p>Atenciosamente, Equipe da Loja</p>
+</body>
+</html>

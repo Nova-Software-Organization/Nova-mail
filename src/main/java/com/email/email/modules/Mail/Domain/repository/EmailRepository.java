@@ -1,8 +1,8 @@
 package com.email.email.modules.Mail.Domain.repository;
 
-import com.email.email.common.Enum.EmailType;
+import com.email.email.common.Enum.mail.TemplateEmailType;
 import com.email.email.modules.Mail.Domain.model.Email;
 
 public interface EmailRepository {
-    Email createEmail(EmailType type, String to, String subject, String body);
+    public Email createEmail(TemplateEmailType type, String to, String subject, String body);
 }
